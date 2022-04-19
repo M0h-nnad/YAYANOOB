@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Injectable({ providedIn: 'root' })
 export class TalentsService {
 	// apiUrl: any = 'http://localhost:2000';
-	apiUrl: any = 'https://yayanoob.herokuapp.com/';
+	apiUrl: any = 'https://yayanoob.herokuapp.com';
 	constructor(
 		private route: Router,
 		private httpClient: HttpClient,
