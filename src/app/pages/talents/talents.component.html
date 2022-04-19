@@ -1,0 +1,143 @@
+<div class="container flex justify-center my-12">
+  <div class="add-talent-container xl:w-1/2 lg:w-1/2 md:w-2/3 sm:w-full login">
+    <div class="add-talent-form">
+      <h2 class="text-3xl">أضف موهبة</h2>
+      <form [formGroup]="talentForm">
+
+        <div class="form-group">
+          <label for="name">الإسم</label>
+          <input type="text" formControlName="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="talent">الموهبه</label>
+          <input type="text" formControlName="talent" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="number">الرقم</label>
+          <input type="number" formControlName="number" class="form-control">
+        </div>
+      </form>
+      <button class="third" (click)="addTalent()">أضف</button>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="container my-12">
+  <div class="cards-container">
+    <div class="card-container" *ngFor="let talent of talents;let i = index">
+
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">{{ talent.name}}</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">{{talent.talent}}</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">{{talent.number}}</span>
+        </div> <br>
+        <button class="third black" (click)="delete(talent._id,i)">حذف</button>
+      </div>
+
+    </div>
+
+    <!-- <div class="card-container">
+
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

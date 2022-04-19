@@ -1,0 +1,172 @@
+<app-navbar></app-navbar>
+<app-hero></app-hero>
+<div class="container my-12">
+  <h2 class="text-center text-3xl my-5">المواهب</h2>
+
+  <div class="cards-container">
+    <div class="card-container" *ngFor="let talent of talents;let i = index">
+      <div class="vote-container">
+        <div class="vote-up">
+          <img src="assets/img/arrow-up-circle-fill.svg" (click)="vote(talent._id,'up',i)">
+        </div>
+        <span class="number">
+          {{talent.voteNumbers}}
+        </span>
+        <div class="vote-down">
+          <img src="assets/img/arrow-down-circle-fill.svg" (click)="vote(talent._id,'down',i)">
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">{{talent.name}}</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">{{talent.talent}}</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">{{talent.number}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="card-container">
+      <div class="vote-container">
+        <div class="vote-up">
+          <img src="assets/img/arrow-up-circle-fill.svg" alt="">
+        </div>
+        <span class="number">
+          1
+        </span>
+        <div class="vote-down">
+          <img src="assets/img/arrow-down-circle-fill.svg" alt="">
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="vote-container">
+        <div class="vote-up">
+          <img src="assets/img/arrow-up-circle-fill.svg" alt="">
+        </div>
+        <span class="number">
+          1
+        </span>
+        <div class="vote-down">
+          <img src="assets/img/arrow-down-circle-fill.svg" alt="">
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="vote-container">
+        <div class="vote-up">
+          <img src="assets/img/arrow-up-circle-fill.svg" alt="">
+        </div>
+        <span class="number">
+          1
+        </span>
+        <div class="vote-down">
+          <img src="assets/img/arrow-down-circle-fill.svg" alt="">
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="vote-container">
+        <div class="vote-up">
+          <img src="assets/img/arrow-up-circle-fill.svg" alt="">
+        </div>
+        <span class="number">
+          1
+        </span>
+        <div class="vote-down">
+          <img src="assets/img/arrow-down-circle-fill.svg" alt="">
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="form-container">
+
+          <label for="name">الاسم : &nbsp;</label>
+          <span class="name">يسبشسيبشسيبنشسيبتمن</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="talent">الموهبه : &nbsp;</label>
+          <span class="talent">يسلبشسبلسبل</span>
+        </div>
+        <br>
+        <div class="form-container">
+
+          <label for="number">الرقم : &nbsp;</label>
+          <span class="number">1</span>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<app-modal [isShown]="isShown" (close)="close($event)"></app-modal>
+<app-footer></app-footer>

@@ -1,0 +1,6 @@
+{
+	"hosting": {
+    "site": "yayanoo",
+		"public": "dist/ProjectName"
+	}
+}

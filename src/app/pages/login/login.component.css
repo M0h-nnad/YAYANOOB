@@ -1,0 +1,20 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #242731;
+  padding: 2rem 4rem;
+  border-radius: 30px;
+}
+
+
+

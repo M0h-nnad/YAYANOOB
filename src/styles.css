@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+*, ::after, ::before {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+body{
+  background-color: #212529;
+  color: #fff;
+}
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+
+
+
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.form-control{
+  -shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-colored: 0 1px 2px 0 var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow, 0 0 #0000), var(--ring-shadow, 0 0 #0000), var(--shadow);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgb(203 213 225);
+    border-radius: 0.375rem;
+    width: 100%;
+    margin-top: 0.25rem;
+    color: #000;
+}
+.form-control:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(14 165 233 / var(--tw-ring-opacity));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+}
+
+.third{
+  background-color: #79018C;
+  color: #f5f5f5;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2.25px 4.5px rgb(0 0 0 / 24%);
+}
+.third:active{
+  box-shadow: initial;
+  transform: scale(0.95);
+}
+
+.black{
+  background-color: initial;
+}

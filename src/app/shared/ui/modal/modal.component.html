@@ -1,0 +1,28 @@
+<ng-template [ngIf]="isShown">
+
+  <div class="back-drop"></div>
+  <div class="modal border-slate-300">
+
+    <form class="" [formGroup]="modalFormGroup">
+      <div class="container">
+
+        <div class="form-group">
+
+          <label for="Email">Email</label>
+          <input type="email" formControlName="email" class="form-control">
+        </div>
+
+      </div>
+
+    </form>
+
+    <div class="modal-footer">
+      <button class="third" [disabled]="modalFormGroup.invalid"
+        (click)="sendEmail()">vote</button>
+      <button class="third black" (click)="closeModal()">close</button>
+    </div>
+
+
+  </div>
+
+</ng-template>

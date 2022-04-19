@@ -1,0 +1,58 @@
+.cards-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 500px;
+  gap: 20px;
+}
+
+.card-container {
+  direction: rtl;
+  display: flex;
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  background-color: #242731;
+  gap: 10px;
+}
+
+.vote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%;
+  border-inline-end: 2px solid #4C0070;
+  height: 100%;
+}
+
+.vote-container span.number {
+  font-size: 40px;
+  color: #F5F5F5;
+}
+
+.vote-up img,
+.vote-down img {
+  width: 30px;
+  cursor: pointer;
+  filter: invert(10%) sepia(57%) saturate(5394%) hue-rotate(285deg) brightness(116%) contrast(115%);
+}
+.vote-up.disabled img,
+.vote-down.disabled img {
+  visibility: hidden;
+
+}
+
+
+
+.vote-up img:active,
+.vote-down img:active {
+  transform: scale(0.90);
+}
+
+.info-container {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #4cf2f2;
+}
