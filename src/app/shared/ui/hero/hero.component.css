@@ -2,13 +2,14 @@
   background-image: url('../../../../assets/img/1.avif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
   height: 100vh;
   position: relative;
   z-index: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: #fff;
   padding: 0px 1rem;
 }
